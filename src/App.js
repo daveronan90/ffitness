@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import Homepage from "./Pages/Homepage";
+import OpenGymPage from "./Pages/OpenGymPage";
+import Footer from "./Components/Footer";
+import { ReactComponent as Logo } from "./assets/FF.svg";
+import Navbar from "./Components/NavBar";
+import GolfPage from "./Pages/GolfPage";
 
-function App() {
+const App = () => {
+  const [open, setOpen] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <BrowserRouter>
+      <div className="flex font-barlow">
+        <Navbar open={open} setOpen={setOpen} />
+        <div
+          className={`w-full grid h-screen grid-rows-layout overflow-hidden text-white bg-black`}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <header className="flex items-center justify-center h-16">
+            <Link to="/">
+              <Logo />
+            </Link>
+          </header>
+          <div className="overflow-auto bg-black">
+            <Switch>
+              <Route exact path="/" component={Homepage} />
+              <Route path="/opengym" component={OpenGymPage} />
+              <Route path="/golf" component={GolfPage} />
+            </Switch>
+            <Footer />
+          </div>
+        </div>
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
