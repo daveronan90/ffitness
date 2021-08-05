@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/ffitness/static/css/main.1a948d42.chunk.css",
+    "main.js": "/ffitness/static/js/main.01632d99.chunk.js",
+    "main.js.map": "/ffitness/static/js/main.01632d99.chunk.js.map",
+    "runtime-main.js": "/ffitness/static/js/runtime-main.866302d2.js",
+    "runtime-main.js.map": "/ffitness/static/js/runtime-main.866302d2.js.map",
+    "static/js/2.b6ad14d5.chunk.js": "/ffitness/static/js/2.b6ad14d5.chunk.js",
+    "static/js/2.b6ad14d5.chunk.js.map": "/ffitness/static/js/2.b6ad14d5.chunk.js.map",
+    "static/js/3.c3b3d924.chunk.js": "/ffitness/static/js/3.c3b3d924.chunk.js",
+    "static/js/3.c3b3d924.chunk.js.map": "/ffitness/static/js/3.c3b3d924.chunk.js.map",
+    "index.html": "/ffitness/index.html",
+    "static/css/main.1a948d42.chunk.css.map": "/ffitness/static/css/main.1a948d42.chunk.css.map",
+    "static/js/2.b6ad14d5.chunk.js.LICENSE.txt": "/ffitness/static/js/2.b6ad14d5.chunk.js.LICENSE.txt",
+    "static/media/FF.37ccdaae.svg": "/ffitness/static/media/FF.37ccdaae.svg",
+    "static/media/classesAndMembership.3945f7af.jpg": "/ffitness/static/media/classesAndMembership.3945f7af.jpg",
+    "static/media/golfServiceCard.e1be943a.jpeg": "/ffitness/static/media/golfServiceCard.e1be943a.jpeg",
+    "static/media/opengym.906e8d2d.jpg": "/ffitness/static/media/opengym.906e8d2d.jpg",
+    "static/media/personalTraining.9de495d8.jpg": "/ffitness/static/media/personalTraining.9de495d8.jpg",
+    "static/media/transformation1.2f521119.jpeg": "/ffitness/static/media/transformation1.2f521119.jpeg",
+    "static/media/transformation2.4c95599d.jpeg": "/ffitness/static/media/transformation2.4c95599d.jpeg",
+    "static/media/transformation3.20048324.jpeg": "/ffitness/static/media/transformation3.20048324.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.866302d2.js",
+    "static/js/2.b6ad14d5.chunk.js",
+    "static/css/main.1a948d42.chunk.css",
+    "static/js/main.01632d99.chunk.js"
+  ]
+}
