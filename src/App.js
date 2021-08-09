@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import { HashRouter, Link, Route, Switch } from "react-router-dom";
 import Homepage from "./Pages/Homepage";
-import OpenGymPage from "./Pages/OpenGymPage";
+import GymClassesPage from './Pages/GymClassesPage';
 import Footer from "./Components/Footer";
 import { ReactComponent as Logo } from "./assets/FF.svg";
 import Navbar from "./Components/NavBar";
@@ -10,7 +10,7 @@ import GolfPage from "./Pages/GolfPage";
 const App = () => {
   const [open, setOpen] = useState(false);
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="flex font-barlow">
         <Navbar open={open} setOpen={setOpen} />
         <div
@@ -24,14 +24,14 @@ const App = () => {
           <div className="overflow-auto bg-black">
             <Switch>
               <Route exact path="/" component={Homepage} />
-              <Route path="/opengym" component={OpenGymPage} />
+              <Route path="/opengym" component={GymClassesPage} />
               <Route path="/golf" component={GolfPage} />
             </Switch>
             <Footer />
           </div>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

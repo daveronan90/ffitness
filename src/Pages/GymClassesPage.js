@@ -1,5 +1,7 @@
 import React from "react";
 import Timetable from "../Components/Timetable";
+import { classTableData } from "../fixtures/classesTimetableData";
+import { gymTableData } from "../fixtures/gymTimetableData";
 
 const OpenGymPage = () => {
   return (
@@ -10,22 +12,21 @@ const OpenGymPage = () => {
         muted
         autoPlay
       ></video>
-      <Timetable />
       <h1 className="text-center font-bold text-5xl mt-8 tracking-wide relative">
         Our Pricing
       </h1>
       <div className="flex flex-col justify-center sm:flex-row text-base-yellow">
         <div className="border rounded-lg md:rounded-r-none text-center p-5 mx-auto md:mx-0 my-2 md:my-6 bg-gray-100 font-medium z-10 shadow-lg">
-          <div className="">Classes</div>
+          <div className="">1 Month Gym & Classes</div>
           <div id="annual" className="font-bold text-6xl annual">
-            199.99
+            99.00
           </div>
           <hr />
-          <div className="text-sm my-3">500 GB Storage</div>
+          <div className="text-sm my-3">Unlimited access to open GYM</div>
           <hr />
-          <div className="text-sm my-3">2 Users Allowed</div>
+          <div className="text-sm my-3">State of the art equipment</div>
           <hr />
-          <div className="text-sm my-3">Send up to 3 GB</div>
+          <div className="text-sm my-3">Limitied spaces remaining</div>
           <hr />
           <a href="/" target="_blank">
             <div className="bg-gradient-base border border-base-yellow hover:bg-white text-black hover:text-base-yellow font-bold uppercase text-xs mt-5 py-2 px-4 rounded cursor-pointer">
@@ -38,14 +39,14 @@ const OpenGymPage = () => {
           <div className="py-4">
             Gym & Classes
             <div id="annual" className="font-bold text-6xl annual">
-              249.99
+              899.00
             </div>
             <hr />
-            <div className="text-sm my-3">1 TB Storage</div>
+            <div className="text-sm my-3">Unlimited access to GYM</div>
             <hr />
-            <div className="text-sm my-3">5 Users Allowed</div>
+            <div className="text-sm my-3">Unlimited access to Classes</div>
             <hr />
-            <div className="text-sm my-3">Send up to 10 GB</div>
+            <div className="text-sm my-3">Limited spaces remaining</div>
             <hr />
             <a href="/" target="_blank">
               <div className="bg-white border border-white hover:bg-transparent text-base-yellow hover:text-white font-bold uppercase text-xs mt-5 py-2 mpx-4 rounded cursor-pointer">
@@ -58,14 +59,14 @@ const OpenGymPage = () => {
         <div className="border rounded-lg  md:rounded-l-none text-center p-5 mx-auto md:mx-0 my-2 md:my-6 bg-gray-100 font-medium z-10 shadow-lg text-base-yellow">
           <div className="">Gym Only</div>
           <div id="annual" className="font-bold text-6xl annual">
-            399.99
+            549.00
           </div>
           <hr />
-          <div className="text-sm my-3">2 TB Storage</div>
+          <div className="text-sm my-3">Unlimited access to open GYM</div>
           <hr />
-          <div className="text-sm my-3">10 Users Allowed</div>
+          <div className="text-sm my-3">State of the art equipment</div>
           <hr />
-          <div className="text-sm my-3">Send up to 20 GB</div>
+          <div className="text-sm my-3">Limitied spaces remaining</div>
           <hr />
           <a href="/" target="_blank">
             <div className="bg-gradient-base border border-base-yellow hover:bg-transparent text-black hover:text-base-yellow font-bold uppercase text-xs mt-5 py-2 px-4 rounded cursor-pointer">
@@ -74,6 +75,8 @@ const OpenGymPage = () => {
           </a>
         </div>
       </div>
+      <Timetable tableData={gymTableData} />
+      <Timetable tableData={classTableData} />
     </div>
   );
 };

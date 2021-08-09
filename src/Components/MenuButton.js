@@ -6,7 +6,7 @@ const MenuButton = ({ open, setOpen }) => {
       onClick={() => setOpen(!open)}
       className={`w-10 h-10 relative focus:outline-none transform ease-in-out transition-all duration-300 z-30 ${
         open
-          ? "bg-black translate-x-24  border-base-yellow border-2 rounded-full"
+          ? "bg-black translate-x-36  border-base-yellow border-2 rounded-full"
           : "translate-x-0"
       }`}
     >
