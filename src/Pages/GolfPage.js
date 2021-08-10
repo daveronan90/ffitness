@@ -31,22 +31,6 @@ const GolfPage = () => {
             delivery and ball flight is greatly superior to what is possible
             through single radar technology.
           </p>
-          <br />
-          <p>
-            TrackMan uses two radar systems instead of one to obtain maximum
-            data quality and increased pick up rates. One radar system tracks
-            everything the club does before, during, and after impact - from
-            commonly known parameters like club path and face angle to swing
-            direction and spin loft. The other radar system tracks the full ball
-            flight - from launch to landing and everything in between; including
-            launch angle, spin rate and curvature. The dual radar technology
-            enables even more data to be captured. Due to its focused,
-            high-resolution radar beam, the TrackMan launch monitor provides the
-            user with the greatest detail and accuracy of the club and ball at
-            the moment of impact. The amount of detail achieved in the club
-            delivery and ball flight is greatly superior to what is possible
-            through single radar technology.
-          </p>
         </div>
       </div>
       <div className="grid grid-cols-3 text-center mx-1 my-2 text-xs font-semibold sm:text-base">
