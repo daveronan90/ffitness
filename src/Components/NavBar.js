@@ -15,6 +15,10 @@ const navItems = [
     name: "3D Body Scan",
     path: "/styku",
   },
+  {
+    name: "Personal Training",
+    path: "/personaltraining",
+  },
 ];
 
 function Navbar({ open, setOpen }) {

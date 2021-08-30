@@ -9,6 +9,8 @@ const GolfPage = () => {
         loop
         muted
         autoPlay
+        disablePictureInPicture
+        disableRemotePlayback
       ></video>
       <div className="flex flex-col">
         <img src={tm1} alt="trackman" />

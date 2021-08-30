@@ -18,6 +18,8 @@ const Homepage = () => {
         loop
         muted
         autoPlay
+        disablePictureInPicture
+        disableRemotePlayback
       ></video>
       <div className="p-4">
         <div className="grid gap-4 bg-black sm:grid-flow-col">
@@ -26,8 +28,9 @@ const Homepage = () => {
               <div
                 style={{
                   backgroundImage: `url(${service})`,
-                  backgroundSize: "cover",
                   backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
                 }}
                 className="shadow-3xl w-full h-64"
               />
@@ -50,8 +53,9 @@ const Homepage = () => {
           <div
             style={{
               backgroundImage: `url(${team})`,
-              backgroundSize: "cover",
               backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
             }}
             className="shadow-3xl w-full h-64"
           />

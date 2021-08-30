@@ -7,6 +7,7 @@ import Homepage from "./Pages/Homepage";
 import GymClassesPage from "./Pages/GymClassesPage";
 import GolfPage from "./Pages/GolfPage";
 import StykuPage from "./Pages/StykuPage";
+import PersonalTraining from "./Pages/PersonalTraining";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -22,15 +23,16 @@ const App = () => {
               <Logo />
             </Link>
           </header>
-          <div className="overflow-y-scroll max-w-screen-xl">
+          <div className="overflow-y-scroll container no-scrollbar">
             <Switch>
               <Route exact path="/" component={Homepage} />
               <Route path="/opengym" component={GymClassesPage} />
               <Route path="/golf" component={GolfPage} />
               <Route path="/styku" component={StykuPage} />
+              <Route path="/personaltraining" component={PersonalTraining} />
             </Switch>
-            <Footer />
           </div>
+            <Footer />
         </div>
       </div>
     </HashRouter>

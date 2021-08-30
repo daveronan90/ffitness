@@ -11,6 +11,8 @@ const OpenGymPage = () => {
         loop
         muted
         autoPlay
+        disablePictureInPicture
+        disableRemotePlayback
       ></video>
       <h1 className="text-center font-bold text-5xl mt-8 tracking-wide relative">
         Our Pricing

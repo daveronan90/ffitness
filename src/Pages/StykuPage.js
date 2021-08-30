@@ -32,7 +32,7 @@ const StykuPage = () => {
           <br />A detailed Styku report will be emailed to you and your data
           will remain in the system for comparison with future scans.
         </p>
-        <ul className="m-3 sm:">
+        <ul className="m-3">
           <li>
             <span className="text-base-yellow">- </span>Measures Body Fat and
             Overall Fitness
