@@ -1,27 +1,7 @@
-import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
-const variants = {
-  enter: (direction) => {
-    return {
-      x: direction > 0 ? 1000 : -1000,
-      opacity: 0,
-    };
-  },
-  center: {
-    x: 0,
-    opacity: 1,
-  },
-  exit: (direction) => {
-    return {
-      x: direction < 0 ? 1000 : -1000,
-      opacity: 0,
-    };
-  },
-};
-
 const Slider = ({ images }) => {
-  const [[page, direction], setPage] = useState([0, 0]);
+  const [[page], setPage] = useState([0, 0]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -43,26 +23,18 @@ const Slider = ({ images }) => {
   return (
     <div className="flex items-center justify-center overflow-x-hidden">
       <div
-        className="transform rotate-180 scale-150 mr-3 sm:mr-32"
+        className="transform rotate-180 scale-150 mr-3 sm:mr-32 cursor-pointer"
         onClick={() => paginate(-1)}
       >
         {"‣"}
       </div>
-      <AnimatePresence initial={false} custom={direction} exitBeforeEnter>
-        <motion.img
-          className="w-1/2"
-          key={page}
+        <img
+          className="w-1/2 h-40 sm:h-80"
           src={images[page]}
-          custom={direction}
-          variants={variants}
-          initial="enter"
-          animate="center"
-          exit="exit"
-          transition={{ duration: 0.1 }}
+          alt="img"
         />
-      </AnimatePresence>
       <div
-        className="transform scale-150 ml-3 sm:ml-32"
+        className="transform scale-150 ml-3 sm:ml-32 cursor-pointer"
         onClick={() => paginate(1)}
       >
         {"‣"}

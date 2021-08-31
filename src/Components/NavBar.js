@@ -19,6 +19,10 @@ const navItems = [
     name: "Personal Training",
     path: "/personaltraining",
   },
+  {
+    name: "Transformations",
+    path: "/transformations",
+  },
 ];
 
 function Navbar({ open, setOpen }) {

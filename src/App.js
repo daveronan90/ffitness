@@ -8,6 +8,7 @@ import GymClassesPage from "./Pages/GymClassesPage";
 import GolfPage from "./Pages/GolfPage";
 import StykuPage from "./Pages/StykuPage";
 import PersonalTraining from "./Pages/PersonalTraining";
+import Transformations from "./Pages/Transformations";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -30,6 +31,7 @@ const App = () => {
               <Route path="/golf" component={GolfPage} />
               <Route path="/styku" component={StykuPage} />
               <Route path="/personaltraining" component={PersonalTraining} />
+              <Route path="/transformations" component={Transformations} />
             </Switch>
           </div>
             <Footer />
