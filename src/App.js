@@ -9,6 +9,7 @@ import GolfPage from "./Pages/GolfPage";
 import StykuPage from "./Pages/StykuPage";
 import PersonalTraining from "./Pages/PersonalTraining";
 import Transformations from "./Pages/Transformations";
+import PhysicalTherapy from "./Pages/PhysicalTherapy";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -19,7 +20,7 @@ const App = () => {
         <div
           className={`flex flex-col items-center w-full h-screen overflow-hidden text-white bg-black`}
         >
-          <header className="flex items-center justify-center h-16">
+          <header className="flex items-center justify-center h-16 my-1">
             <Link to="/">
               <Logo />
             </Link>
@@ -32,6 +33,7 @@ const App = () => {
               <Route path="/styku" component={StykuPage} />
               <Route path="/personaltraining" component={PersonalTraining} />
               <Route path="/transformations" component={Transformations} />
+              <Route path="/physicaltherapy" component={PhysicalTherapy} />
             </Switch>
           </div>
             <Footer />

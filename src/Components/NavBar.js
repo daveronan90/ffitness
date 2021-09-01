@@ -23,6 +23,10 @@ const navItems = [
     name: "Transformations",
     path: "/transformations",
   },
+  {
+    name: "Physical Therapy",
+    path: "/physicaltherapy",
+  },
 ];
 
 function Navbar({ open, setOpen }) {
