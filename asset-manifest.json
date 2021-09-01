@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ffitness/static/css/main.509bfc01.chunk.css",
-    "main.js": "/ffitness/static/js/main.e67dd354.chunk.js",
-    "main.js.map": "/ffitness/static/js/main.e67dd354.chunk.js.map",
+    "main.css": "/ffitness/static/css/main.336fbfd0.chunk.css",
+    "main.js": "/ffitness/static/js/main.89d54a45.chunk.js",
+    "main.js.map": "/ffitness/static/js/main.89d54a45.chunk.js.map",
     "runtime-main.js": "/ffitness/static/js/runtime-main.0528f3f5.js",
     "runtime-main.js.map": "/ffitness/static/js/runtime-main.0528f3f5.js.map",
     "static/js/2.8b48b3be.chunk.js": "/ffitness/static/js/2.8b48b3be.chunk.js",
@@ -10,16 +10,19 @@
     "static/js/3.e02b0cb5.chunk.js": "/ffitness/static/js/3.e02b0cb5.chunk.js",
     "static/js/3.e02b0cb5.chunk.js.map": "/ffitness/static/js/3.e02b0cb5.chunk.js.map",
     "index.html": "/ffitness/index.html",
-    "static/css/main.509bfc01.chunk.css.map": "/ffitness/static/css/main.509bfc01.chunk.css.map",
+    "static/css/main.336fbfd0.chunk.css.map": "/ffitness/static/css/main.336fbfd0.chunk.css.map",
     "static/js/2.8b48b3be.chunk.js.LICENSE.txt": "/ffitness/static/js/2.8b48b3be.chunk.js.LICENSE.txt",
     "static/media/FF.37ccdaae.svg": "/ffitness/static/media/FF.37ccdaae.svg",
     "static/media/classesAndMembership.3945f7af.jpg": "/ffitness/static/media/classesAndMembership.3945f7af.jpg",
+    "static/media/cupping.a873f9cd.jpg": "/ffitness/static/media/cupping.a873f9cd.jpg",
+    "static/media/dry-needle.d4c26f37.jpg": "/ffitness/static/media/dry-needle.d4c26f37.jpg",
     "static/media/eoghan.6bf6d301.jpg": "/ffitness/static/media/eoghan.6bf6d301.jpg",
     "static/media/golfServiceCard.e1be943a.jpeg": "/ffitness/static/media/golfServiceCard.e1be943a.jpeg",
     "static/media/opengym.906e8d2d.jpg": "/ffitness/static/media/opengym.906e8d2d.jpg",
     "static/media/personalTraining.9de495d8.jpg": "/ffitness/static/media/personalTraining.9de495d8.jpg",
     "static/media/robbie.77d9b0fd.jpg": "/ffitness/static/media/robbie.77d9b0fd.jpg",
     "static/media/shannon.aa93de3b.jpg": "/ffitness/static/media/shannon.aa93de3b.jpg",
+    "static/media/sports-massage.51b34a0a.jpg": "/ffitness/static/media/sports-massage.51b34a0a.jpg",
     "static/media/styku.bc7c5cd7.png": "/ffitness/static/media/styku.bc7c5cd7.png",
     "static/media/tm1.f09e4748.png": "/ffitness/static/media/tm1.f09e4748.png",
     "static/media/transformation1.jpeg": "/ffitness/static/media/transformation1.2f521119.jpeg",
@@ -63,7 +66,7 @@
   "entrypoints": [
     "static/js/runtime-main.0528f3f5.js",
     "static/js/2.8b48b3be.chunk.js",
-    "static/css/main.509bfc01.chunk.css",
-    "static/js/main.e67dd354.chunk.js"
+    "static/css/main.336fbfd0.chunk.css",
+    "static/js/main.89d54a45.chunk.js"
   ]
 }
