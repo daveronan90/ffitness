@@ -20,12 +20,12 @@ const App = () => {
         <div
           className={`flex flex-col items-center w-full h-screen overflow-hidden text-white bg-black`}
         >
-          <header className="flex items-center justify-center h-16 my-1">
+          <header className="flex items-center justify-center h-16 my-1  container mx-auto">
             <Link to="/">
               <Logo />
             </Link>
           </header>
-          <div className="overflow-y-scroll container no-scrollbar">
+          <div className="overflow-y-scroll no-scrollbar">
             <Switch>
               <Route exact path="/" component={Homepage} />
               <Route path="/opengym" component={GymClassesPage} />

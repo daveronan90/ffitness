@@ -29,7 +29,7 @@ const Slider = ({ images }) => {
         {"‣"}
       </div>
         <img
-          className="w-1/2 max-w-sm h-40 sm:h-80"
+          className=" w-2/3"
           src={images[page]}
           alt="img"
         />

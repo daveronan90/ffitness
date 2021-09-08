@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Video from "../Components/Video";
 import robbie from "../assets/robbie.jpg";
 import shannon from "../assets/shannon.jpg";
 import eoghan from "../assets/eoghan.jpg";
@@ -63,14 +64,7 @@ function PersonalTraining() {
   const [showBio, setShowBio] = useState(null);
   return (
     <div>
-      <video
-        src={process.env.PUBLIC_URL + "/ptVideo.mp4"}
-        loop
-        muted
-        autoPlay
-        disablePictureInPicture
-        disableRemotePlayback
-      ></video>
+      <Video source={"/ptVideo.mp4"} />
       <h1 className="text-xl font-bold text-center">Personal Training</h1>
       <p className="m-2">
         Sometimes we need a little help. A gentle push to get us started and to
@@ -144,11 +138,16 @@ function PersonalTraining() {
                 <p>{position}</p>
                 <h1 className="text-xl font-bold text-base-yellow">{name}</h1>
                 <p className="text-xss sm:text-base">{bio}</p>
-                <p className="text-xss sm:text-base my-2">Academic Qualifications:</p>
+                <p className="text-xss sm:text-base my-2">
+                  Academic Qualifications:
+                </p>
                 <ul className="text-xss sm:text-base">
                   {quals.map((qual, idx) => (
                     <li key={idx}>
-                      <span className="text-base-yellow font-extrabold">- </span> {qual}
+                      <span className="text-base-yellow font-extrabold">
+                        -{" "}
+                      </span>{" "}
+                      {qual}
                     </li>
                   ))}
                 </ul>

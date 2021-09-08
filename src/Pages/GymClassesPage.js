@@ -1,19 +1,13 @@
 import React from "react";
 import Timetable from "../Components/Timetable";
+import Video from "../Components/Video";
 import { classTableData } from "../fixtures/classesTimetableData";
 import { gymTableData } from "../fixtures/gymTimetableData";
 
 const OpenGymPage = () => {
   return (
-    <div className="overflow-auto bg-black ">
-      <video
-        src={process.env.PUBLIC_URL + "/OpenGym.mp4"}
-        loop
-        muted
-        autoPlay
-        disablePictureInPicture
-        disableRemotePlayback
-      ></video>
+    <div>
+      <Video source={"/OpenGym.mp4"} />
       <h1 className="text-center font-bold text-5xl mt-8 tracking-wide relative">
         Our Pricing
       </h1>

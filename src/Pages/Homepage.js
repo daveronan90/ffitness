@@ -3,6 +3,7 @@ import classes from "../assets/classesAndMembership.jpg";
 import golf from "../assets/golfServiceCard.jpeg";
 import team from "../assets/personalTraining.jpg";
 import gym from "../assets/opengym.jpg";
+import Video from "../Components/Video";
 
 const services = [
   { name: "Open Gym", service: gym },
@@ -13,14 +14,7 @@ const services = [
 const Homepage = () => {
   return (
     <main>
-      <video
-        src={process.env.PUBLIC_URL + "/mainVideo.mp4"}
-        loop
-        muted
-        autoPlay
-        disablePictureInPicture
-        disableRemotePlayback
-      ></video>
+      <Video source={"/mainVideo.mp4"}/>
       <div className="p-4">
         <div className="grid gap-4 bg-black sm:grid-flow-col">
           {services.map(({ name, service }, idx) => (

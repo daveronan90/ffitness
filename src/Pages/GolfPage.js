@@ -1,17 +1,11 @@
 import React from "react";
 import tm1 from "../assets/tm1.png";
+import Video from "../Components/Video";
 
 const GolfPage = () => {
   return (
     <div>
-      <video
-        src={process.env.PUBLIC_URL + "/trackman.mp4"}
-        loop
-        muted
-        autoPlay
-        disablePictureInPicture
-        disableRemotePlayback
-      ></video>
+      <Video source={"/trackman.mp4"}/>
       <div className="flex flex-col">
         <img src={tm1} alt="trackman" />
         <div className="m-2">
